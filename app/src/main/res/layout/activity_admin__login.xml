@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back"
+    tools:context=".Admin.Admin_Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/admin" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxBackgroundColor="@color/design_default_color_on_primary">
+
+            <EditText
+                android:id="@+id/txtusername1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="#BDD4D6"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textColorHighlight="@color/design_default_color_secondary_variant"
+                android:textColorHint="@color/design_default_color_secondary_variant"
+                android:textColorLink="@color/design_default_color_on_secondary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="8dp"
+            app:boxBackgroundColor="@color/design_default_color_on_primary">
+
+            <EditText
+                android:id="@+id/txtpassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:background="#BDD4D6"
+                android:inputType="textPassword"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textColorHighlight="@color/design_default_color_secondary_variant"
+                android:textColorHint="@color/design_default_color_secondary_variant" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laundry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Laundry S"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Laundry">
+        <activity android:name=".u_forgot_pass"
+            android:parentActivityName=".User_Login">
+        </activity>
+        <activity android:name=".demo" />
+        <activity
+            android:name=".R_view_details"
+            android:parentActivityName=".recent_orders" />
+        <activity
+            android:name=".Admin.a_edit_order"
+            android:parentActivityName=".Admin.manage_orders" />
+        <activity
+            android:name=".Admin.confirm_order"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".edit_order"
+            android:parentActivityName=".my_orders" />
+        <activity
+            android:name=".my_orders"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Admin.order_details"
+            android:parentActivityName=".Admin.manage_orders" />
+        <activity
+            android:name=".Admin.manage_orders"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".recent_orders"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Admin.add_type"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".Admin.edit_details"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".Admin.view_details"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".Admin.Admin_Login"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Admin.a_change_password"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".Admin.manage_laundry"
+            android:parentActivityName=".Admin.admin_dashboard" />
+        <activity
+            android:name=".Admin.admin_dashboard"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".view_details"
+            android:parentActivityName=".my_orders" />
+        <activity
+            android:name=".add_laundry"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".change_password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".User_Register"
+            android:parentActivityName=".User_Login" />
+        <activity
+            android:name=".User_Login"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

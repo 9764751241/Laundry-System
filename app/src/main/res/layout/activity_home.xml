@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    android:fitsSystemWindows="true"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="25dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:layout_marginTop="23dp"
+            app:srcCompat="@drawable/back5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+        <Button
+            android:id="@+id/btnNew_User"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button1"
+            android:text="New User"
+            android:textColor="@color/viewfinder_laser"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:text="User Login"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="Admin Login "
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
